@@ -1,0 +1,49 @@
+git init – in the folder where you have the code
+
+//confi is used to add you username and email to the repository
+git config --global user.name ‘Ramakant Kushwaha’
+git config –global user.email ‘ramakantk@cybage.com’
+git add <file> to add files (. Is used to add all the files), if you change the file than we have to run the add command again
+	git add index.html
+	git add .
+git rm --cached index.html, will remove the file which is added to staging area
+
+git status to know the file in staging area
+git commit will move all the files from staging are to local repository 
+git commit –m ‘comment to be added with the commit’ for adding the comment with the command otherwise it will prompt to add the comment in linux editor.
+
+Ctrl I – is used to edit the file in editor and esc and then :wq to exit from it.
+
+Git branch mybranch – to create a new branch
+
+Git checkout branchname – to switch between branch
+
+Git merge thebranch – the branch name is the name of branch to be mergerd in the brach on which the command is executed.
+
+.gitignore  file can have the files which or directory that we don’t what to be consider of repository, for example if the files has content as 
+Abc.html
+/pack1
+
+Than it will not consider abc.html and directory pack1 while add even if user git add .
+
+git remote add origin https://github.com/ramakantk1/dzone.git - to add the remote repository
+git push -u origin master
+
+in case of error https://www.educative.io/edpresso/the-fatal-refusing-to-merge-unrelated-histories-git-error use below commond
+git pull origin master --allow-unrelated-histories
+
+
+git push //push the local repository to remote repository
+git pull – to pull changes from the remote repository
+git clone to clone the remote repository to local machine.
+
+
+
+Regards,
+ 	RAMAKANT KUSHWAHA
+Project Manager
+Cell:9970010817	 
+ 	91-20-66049283	 	www.cybage.com
+ 	 	 
+
+
