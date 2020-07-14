@@ -47,3 +47,32 @@ Cell:9970010817
  	 	 
 
 
+Commands we have followed to get new repositry setup
+
+Ramakant@SHREE MINGW64 /e/Ramakant/mygithub/myRepo-master (master)
+$ git init
+Initialized empty Git repository in E:/Ramakant/mygithub/myRepo-master/.git/
+
+Ramakant@SHREE MINGW64 /e/Ramakant/mygithub/myRepo-master (master)
+$ git config --global user.name ‘Ramakant Kushwaha’
+
+Ramakant@SHREE MINGW64 /e/Ramakant/mygithub/myRepo-master (master)
+$ git config user.email 'ramakantk@cybage.com'
+
+Ramakant@SHREE MINGW64 /e/Ramakant/mygithub/myRepo-master (master)
+$ git remote add origin https://github.com/ramakantk1/myRepo.git
+
+Ramakant@SHREE MINGW64 /e/Ramakant/mygithub/myRepo-master (master)
+$ git pull origin master
+remote: Enumerating objects: 57, done.
+remote: Counting objects: 100% (57/57), done.
+remote: Compressing objects: 100% (38/38), done.
+Uremote: Total 57 (delta 7), reused 52 (delta 5), pack-reused 0
+Unpacking objects: 100% (57/57), 15.35 KiB | 9.00 KiB/s, done.
+From https://github.com/ramakantk1/myRepo
+ * branch            master     -> FETCH_HEAD
+ * [new branch]      master     -> origin/master
+
+Ramakant@SHREE MINGW64 /e/Ramakant/mygithub/myRepo-master (master)
+
+
