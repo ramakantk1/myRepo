@@ -1,0 +1,46 @@
+https://www.youtube.com/watch?v=fqMOX6JJhGo
+💻 Practice Labs: https://kodekloud.com/p/docker-labs
+🔗 KodeKloud Website: https://www.kodekloud.com
+🎥 Tutorial from KodeKloud. Check out their Youtube Channel: https://www.youtube.com/user/mmumshad
+
+1. 	docker run imagename for exmple docker rung nginix
+	will run the image
+2. docker ps -will list all the running containers.
+3. docker ps -a will list all the previous running containers.
+4. docker stop nameOfTheCOntainer/IDOfTheCOntainer to stop the container
+5. docker rm nameOfTheCOntainer/IDOfTheCOntainer to remove the container permanently
+docker images is used to list all the images on the machine with their sizes
+docker rmi imagename is used to remove the images from the machine, while doing so we have to make sure that no container is running from the image.
+docker pull imagename is used to pull the image but not run it where as docker run will pull as well as run it.
+docker exec containername cat /etc/host - exec is used to execute any command on running container.
+docker run applicationname we wont be able to do anything on the prompt till the application is running.
+docker run -d applicationname will run the image or application in background, we can list contained using ps command.
+docker attach containerid can be used to attached to the running container, we can mentioned few letter of the id(we dont have to mentioned the compelte name) which are unique in your collection of container.
+
+Q Run a container with the nginx:1.14-alpine image and name it webapp
+docker run --name webapp nginx:1.14-alpine
+
+To run specific version of the image, we use tag ex. docker run redis:4.0, in case if tag is not spefied than lates version of the image will pulled and executed. All the supported tag/version is avilable on the docker hub.
+
+run can have option -i and t //can be read more about them 3, video 36:20
+
+The IP assigned to docker container is internal and can be only accesssed from the docker host. In order to make it accessible from the outside we have to map the availbel port on the host with the container 
+docker run -p hostport:dockerport applicationName ex. docker run -p 80:5000 kodekloud/simple-webapp
+
+Volume mapping can also be done, if you want to persist the data even if the container is deleted/removed.
+docker run -v /opt/datadir:/var/lib/mysql mysql
+
+docker inspect containerName will return the container details in JSON format.
+
+docker logs containerName/ID will display all the logs of the container.
+
+Enviornemnt variable 43:00
+docker run -e APP_COLOR:blue appName
+docker inspect containerName also list the envornement variable define for the container.
+
+DOcker image creation 44:15
+1.create the dockr file with the required command
+2. Build the image
+3. push the image to docker hub.
+
+
